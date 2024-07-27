@@ -25,24 +25,24 @@ function mostrarProducto(tipoProducto){
     const itemSelected = item[tipoProducto];
     switch(tipoProducto){
         case 0:
-            listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Estrellas', 0);
+            listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Estrellas', tipoProducto);
             break;
         case 1:
-            listaSelected(nombreEnsalada, imgEnsalada, desEnsalada, priceEnsalada, 'Cometas', 1);
+            listaSelected(nombreEnsalada, imgEnsalada, desEnsalada, priceEnsalada, 'Cometas', tipoProducto);
             break;
         case 2: 
-            listaSelected(nombreObleas, imgObleas, desObleas, priceObleas, 'Cometas', 1);
+            listaSelected(nombreObleas, imgObleas, desObleas, priceObleas, 'Solares', tipoProducto);
             break;
         case 3:
+            listaSelected(nombreBrownies, imgBrownies, desBrownies, priceBrownies, 'Cosmicos', tipoProducto);
             break;
         case 4:
+            window.location.href = 'bebidas.html';
             break;
         case 5:
             break;
         case 6: 
-            break;
-        case 7:
-            break;        
+            break;   
     }
 }
 
@@ -75,37 +75,49 @@ let priceBrownies = ['8500', '10000'];
 
 // Lista de comida en la pagina principal
 // Esta funcion se encarga de crear la lista dependiendo del plato seleccionado
-function listaSelected(nombre, img, description, price, titulo, n){
-    titPrincipal = document.getElementById('title');
-    titPrincipal.textContent = titulo
-    contBox = document.getElementById('content-box')
+function listaSelected(nombre, img, description, price, titulo, n) {
+    const titPrincipal = document.getElementById('title');
+    titPrincipal.textContent = titulo;
+    
+    const contBox = document.getElementById('content-box');
+    // Limpiar el contenido anterior
+    contBox.innerHTML = '';
 
-    for(let i=0; i<nombre.length; i++){
+    for (let i = 0; i < nombre.length; i++) {
         const item = document.createElement('div');
         item.classList.add('item');
         contBox.appendChild(item);
+        
         const imagen = document.createElement('img');
         imagen.src = img[i];
         imagen.classList.add('item-img');
         item.appendChild(imagen);
+        
         const text = document.createElement('div');
         text.textContent = nombre[i];
         item.appendChild(text);
-        desc = document.createElement('div');
-        desc.classList.add('item-description')
+        
+        const desc = document.createElement('div');
+        desc.classList.add('item-description');
         desc.textContent = description[i];
         item.appendChild(desc);
-        value = document.createElement('div');
+        
+        const value = document.createElement('div');
         value.classList.add('item-price');
         value.textContent = price[i];
-        item.appendChild(value) 
+        item.appendChild(value);
     }
     
-    let itemSelected = document.querySelectorAll('.food-item')
-    
-    const primerItem = itemSelected[n];
-    primerItem.classList.add('active');
+    // Asegúrate de seleccionar los nuevos elementos con la clase 'item'
+    const itemSelected = document.querySelectorAll('.item');
+    for (let i of itemSelected) {
+        i.classList.remove('active');
+    }
+    if (itemSelected[n]) {  // Asegúrate de que el índice n es válido
+        itemSelected[n].classList.add('active');
+    }
 }
+
 
 listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Estrellas', 0);
 
