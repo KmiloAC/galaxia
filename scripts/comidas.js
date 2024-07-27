@@ -108,17 +108,19 @@ function listaSelected(nombre, img, description, price, titulo, n) {
         item.appendChild(value);
     }
     
-    // Asegúrate de seleccionar los nuevos elementos con la clase 'item'
-    const itemSelected = document.querySelectorAll('.item');
+    // Seleccionar todos los elementos con la clase 'item'
+    const itemSelected = document.querySelectorAll('.food-item');
+    
+    // Suponiendo que itemSelected es una lista de elementos
     for (let i of itemSelected) {
         i.classList.remove('active');
     }
-    if (itemSelected[n]) {  // Asegúrate de que el índice n es válido
-        itemSelected[n].classList.add('active');
-    }
+
+    // Activa el elemento en la posición n
+    const primerItem = itemSelected[n];
+    primerItem.classList.add('active');
 }
 
 
+
 listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Estrellas', 0);
-
-
