@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.logo-inicio{
+  background: url(../assets/comidas.png);
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+}
+
+.backmenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  border-top: 1px dashed #5b5b5b;
+  height: 10vh;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  background: #fff;
+}
+
+#header{
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 5.5rem;
+}
+
+#main{
+  margin-bottom: 80px;
+}
+
+#list-eatings{
+  display: flex;
+  flex-wrap: nowrap; /* Asegúrate de que los elementos no envuelvan */
+  flex-direction: row;
+  overflow-x: auto; /* Usualmente auto es mejor para overflow */
+}
+
+.food-item{
+  height: 5.8rem;
+  flex-shrink: 0; /* Evita que los elementos se reduzcan */
+  width: 5.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2px;
+}
+
+.food-item.active{
+  border-bottom: 4px solid rgb(142 0 156 / 86%);
+}
+
+.food-text{
+  height: 2rem;
+  font-size: 0.85rem;
+}
+
+.food-img{
+  height: 3rem;
+  margin: auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  width: 4rem;
+}
+
+.social-networks{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 25px;
+  position: absolute;
+  height: 180px;
+  right: 0;
+  padding: 10px;
+  top: 35%;
+  position: fixed;
+  background: rgb(0, 0, 0);
+  border-radius: 20px 0 0 20px;
+  transition: 1s ease;
+}
+
+
+.network{
+  width: 25px;
+  height: 25%;
+  margin: auto auto 0 auto;
+  text-decoration: none;
+  color: black;
+}
+
+.instagram{
+  background: url(../assets/instagram.png) no-repeat;
+  background-size: contain;
+}
+
+.tiktok{
+  background: url(../assets/tik-tok.png) no-repeat;
+  background-size: contain;
+}
+
+.facebook{
+  background: url(../assets/facebook.png) no-repeat;
+  background-size: contain;
+}
+
+#title{
+  font-family: 'Lobster', cursive;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.creator-data{
+  margin-left: 20px;
+  border-top: 2px solid black;
+  padding-top: 30px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#content-box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 15px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.item{
+  height: 230px;
+  width: 40vw;
+  border: 2px groove #e8e8e84f;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  box-shadow: -2px 5px 3px 3px #dadada;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-img{
+  position: absolute;
+  width: 90%;
+  height: 55%;
+  background-size: cover;
+  background: no-repeat;
+}
+
+.item-description{
+  text-align: center;
+  margin-top: 80%;
+  background: #efefef;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.item-price{
+  background: #efefef;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Selecciona el elemento al que deseas aplicar el scroll oculto */
+.scrollable-element {
+  overflow: auto; /* Permite el desplazamiento */
+  -ms-overflow-style: none; /* Oculta el scroll en Internet Explorer y Edge */
+  scrollbar-width: none; /* Oculta el scroll en Firefox */
+}
+
+/* Oculta el scroll en Chrome, Safari y Opera */
+.scrollable-element::-webkit-scrollbar {
+  display: none;
+}
+
+.networks-creator{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 120px;
+  margin: 0;
+}
+
+.network-creator:first-child{
+  margin: 0;
+}
+
+.creator-whatsapp{
+  background: url(../assets/whatsapp.svg) no-repeat;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  margin-left: 0;
+}
+
+.creator-instagram{
+  background: url(../assets/instagram.svg) no-repeat;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  margin-left: 25px;
+}
