@@ -1,10 +1,10 @@
 // Creacion de la lista de comidas
 
 list = document.getElementById('list-eatings');
-nombreComida = ['Waffles','Ensalada de frutas','Obleas','Brownies','Bebidas','a','b'];
+nombreComida = ['Cocteleria', 'Antojitos Galacticos', 'Bebidas Frias', 'Bebidas Calientes', 'Desayunos', 'Snacks'];
 imagenes = ['../assets/lista-de-comida/image1.png', '../assets/lista-de-comida/image2.png', '../assets/lista-de-comida/image3.png', '../assets/lista-de-comida/image4.png', '../assets/lista-de-comida/image5.png','../assets/lista-de-comida/image6.png','../assets/lista-de-comida/image7.png']
 
-for(let i=0; i<7; i++){
+for(let i=0; i<nombreComida.length; i++){
     const item = document.createElement('div');
     item.classList.add('food-item');
     item.addEventListener('click', () => mostrarProducto(i));
@@ -23,53 +23,42 @@ for(let i=0; i<7; i++){
 function mostrarProducto(tipoProducto){
     item = document.querySelectorAll('food-item');
     const itemSelected = item[tipoProducto];
-    switch(tipoProducto){
+    switch (tipoProducto) {
+        // Aquí se proporcionará la descripción de los waffles que se encuentran dentro de la heladería y toda su información relevante
         case 0:
-            listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Estrellas', tipoProducto);
+            listaSelected(nombreCocteleria, imgCocteleria, desCocteleria, priceCocteleria, 'Eclipses', tipoProducto);
             break;
         case 1:
-            listaSelected(nombreEnsalada, imgEnsalada, desEnsalada, priceEnsalada, 'Cometas', tipoProducto);
+            window.location.href = 'seccion1.html';
             break;
-        case 2: 
-            listaSelected(nombreObleas, imgObleas, desObleas, priceObleas, 'Solares', tipoProducto);
-            break;
+        case 2:
+            window.location.href = 'seccion2.html';
+            break;  
         case 3:
-            listaSelected(nombreBrownies, imgBrownies, desBrownies, priceBrownies, 'Cosmicos', tipoProducto);
-            break;
+            window.location.href = 'seccion4.html';
+            break;  
         case 4:
-            window.location.href = 'bebidas.html';
-            break;
+            window.location.href = 'seccion5.html';
+            break;    
         case 5:
+            window.location.href = 'seccion6.html';
+            break;  
+        default:
+            // Puedes agregar un mensaje de error o acción por defecto aquí si es necesario
+            listaSelected(nombreCocteleria, imgCocteleria, desCocteleria, priceCocteleria, 'Eclipses', tipoProducto);
             break;
-        case 6: 
-            break;   
     }
 }
 
-//Aquí se proporcionara la descripcion de los waffles que se encuentran dentro de la heladeria y toda su informacion relevante
-let nombreWaffles = ['Small', 'Big'];
-let imgWaffles = ['../assets/Waffles/waffle1.png', '../assets/Waffles/waffle2.png'];
-let desWaffles = ['Waffle + Helado + 3 Toppings + Salsa', 'Waffle + Helado + 5 Toppings + Salsa'];
-let priceWaffles = ['14500', '16000']
+//Aquí se proporcionara la descripcion de las bebidas calientes que se encuentran dentro de la heladeria y toda su informacion relevante
+//Aquí se proporcionará la descripción de la coctelería que se encuentra dentro de la heladería y toda su información relevante
+// COCTELERÍA
+// ECLIPSES
+let nombreCocteleria = ['Sangría', 'Piña Colada', 'Mojito', 'Margarita', 'Smirnoff con Cerezas'];
+let imgCocteleria = ['../assets/Cocteleria/coctel1.png', '../assets/Cocteleria/coctel2.png', '../assets/Cocteleria/coctel3.png', '../assets/Cocteleria/coctel4.png', '../assets/Cocteleria/coctel5.png'];
+let desCocteleria = ['Vino Tinto - Jugo de Naranja - Nuez Moscada - Frutas...', 'Ron - Piña - Crema de Coco...', 'Ron Blanco - Limón - Hierbabuena...', 'Tequila - TripleSec - Limón...', 'Smirnoff con Cerezas en Almíbar'];
+let priceCocteleria = ['14.000', '18.000', '14.000', '16.000', '18.000'];
 
-//A CONTINUACION SE HACE EXACTAMENTE LO MISMO PARA CADA UNA DE LAS CATEGORIAS NECESARIAS
-// Ensaladas de frutas
-let nombreEnsalada = ['Especial', 'Superespecial'];
-let imgEnsalada = ['../assets/Waffles/waffle1.png', '../assets/Waffles/waffle2.png'];
-let desEnsalada = ['', ''];
-let priceEnsalada = ['11000', '14000'];
-
-//Obleas
-let nombreObleas = ['Sencilla', 'Small con helado', 'Big con helado'];
-let imgObleas = ['../assets/Waffles/waffle1.png', '../assets/Waffles/waffle2.png'];
-let desObleas = ['AREQUIPE + QUESO + SALSAS', 'AREQUIPE + QUESO + 2 TOPPINGS + HELADO + SALSAS', 'AREQUIPE + QUESO + 3 TOPPINGS + HELADO + SALSAS'];
-let priceObleas = ['10000', '12000', '14000'];
-
-//Brownies
-let nombreBrownies = ['Sencillo', 'Especial'];
-let imgBrownies = ['../assets/Waffles/waffle1.png', '../assets/Waffles/waffle2.png'];
-let desBrownies = ['BROWNIE + HELADO + 2 TOPPINGS + SALSA', 'BROWNIE + HELADO + 3 TOPPINGS + SALSA'];
-let priceBrownies = ['8500', '10000'];
 
 
 
@@ -123,4 +112,4 @@ function listaSelected(nombre, img, description, price, titulo, n) {
 
 
 
-listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Estrellas', 0);
+listaSelected(nombreCocteleria, imgCocteleria, desCocteleria, priceCocteleria, 'Eclipses', 0);
