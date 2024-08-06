@@ -82,10 +82,10 @@ let priceBubbleaTea = ['11.000', '11.000'];
 //A CONTINUACION SE HACE EXACTAMENTE LO MISMO PARA CADA UNA DE LAS CATEGORIAS NECESARIAS
 // FRAPPES
 // SATURNOS
-let nombreFrappes = ['Caramelo', 'Cookies and Cream', 'Mocca', 'Maracumango', 'Mango Biche'];
-let imgFrappes = ['../assets/Frappes/frappe1.png', '../assets/Frappes/frappe2.png', '../assets/Frappes/frappe3.png', '../assets/Frappes/frappe4.png', '../assets/Frappes/frappe5.png'];
-let desFrappes = ['Caramelo', 'Cookies and Cream', 'Mocca', 'Maracumango', 'Mango Biche'];
-let priceFrappes = ['10.000', '10.000', '10.000', '10.000', '10.000'];
+let nombreFrappes = ['Frappes'];
+let imgFrappes = ['../assets/seccion2/02frappes/frapuccinos.png'];
+let desFrappes = [''];
+let priceFrappes = ['10.000'];
 
 // LIMONADAS
 // ESTELARES
