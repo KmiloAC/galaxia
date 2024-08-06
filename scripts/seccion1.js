@@ -75,7 +75,7 @@ function mostrarProducto(tipoProducto){
 
 //Aquí se proporcionara la descripcion de los helados de yogurt que se encuentran dentro de la heladeria y toda su informacion relevante
 let nombreHelado = ['Small', 'Medium', 'Big', 'Big Max'];
-let imgHelado = ['../assets/Helado/waffle1.png', '../assets/Helado/waffle2.png'];
+let imgHelado = ['../assets/seccion1/01helado/waffle2.png', '../assets/seccion1/01helado/waffle2.png', '../assets/seccion1/01helado/waffle2.png', '../assets/seccion1/01helado/waffle2.png'];
 let desHelado = ['(Helado + 1 Topping + Salsa', 'Helado + 2 Toppings + Salsa', 'Helado + 3 Toppings + Salsa', 'Helado + 4 Toppings + Salsa'];
 let priceHelado = ['5.000', '6.500', '8.000', '10.000']
 
@@ -83,14 +83,14 @@ let priceHelado = ['5.000', '6.500', '8.000', '10.000']
 // PARFAITS
 // MARTE
 let nombreParfaits = ['Small', 'Big'];
-let imgParfaits = ['../assets/Waffles/waffle1.png', '../assets/Waffles/waffle2.png'];
+let imgParfaits = ['../assets/seccion1/02parfaits/waffle2.png', '../assets/seccion1/02parfaits/waffle2.png'];
 let desParfaits = ['(2 frutas + Granola + Helado)', '(4 frutas + Granola + Helado)'];
 let priceParfaits = ['8.000', '11.000'];
 
 // SUNDAE
 // LUNA
 let nombreSundae = ['Sencillo', 'Especial'];
-let imgSundae = ['../assets/Sundae/sundae1.png', '../assets/Sundae/sundae2.png'];
+let imgSundae = ['../assets/seccion1/03sundae/waffle2.png', '../assets/seccion1/03sundae/waffle2.png'];
 let desSundae = ['(Con Salsas)', '(Con Frutas)'];
 let priceSundae = ['7.000', '9.000'];
 
@@ -98,42 +98,42 @@ let priceSundae = ['7.000', '9.000'];
 // OBLEAS
 // SOLARES
 let nombreObleas = ['Sencilla', 'Small con Helado', 'Big con Helado'];
-let imgObleas = ['../assets/Obleas/oblea1.png', '../assets/Obleas/oblea2.png', '../assets/Obleas/oblea3.png'];
+let imgObleas = ['../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/waffle2.png'];
 let desObleas = ['(Arequipe + Queso + Salsas)', '(Arequipe + Queso + 2 Toppings + Helado + Salsas)', '(Arequipe + Queso + 2 Toppings + Helado + Salsas)'];
 let priceObleas = ['4.000', '10.000', '12.000'];
 
 // WAFFLES
 // ESTRELAS
 let nombreWaffles = ['Small', 'Big'];
-let imgWaffles = ['../assets/Waffles/waffle1.png', '../assets/Waffles/waffle2.png'];
+let imgWaffles = ['../assets/seccion1/05waffles/small.png', '../assets/seccion1/05waffles/big.png'];
 let desWaffles = ['(Waffle + Helado + 3 Toppings + Salsas)', '(Waffle + Helado + 5 Toppings + Salsas)'];
 let priceWaffles = ['14.000', '16.500'];
 
 // MERENGONES
 // UNIVERSOS
 let nombreMerengones = ['Small', 'Medium', 'Big'];
-let imgMerengones = ['../assets/Merengones/merengon1.png', '../assets/Merengones/merengon2.png', '../assets/Merengones/merengon3.png'];
+let imgMerengones = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Merengones/merengon2.png', '../assets/Merengones/merengon3.png'];
 let desMerengones = ['(Merengón + Helado + 1 Topping)', '(Merengón + Helado + 2 Toppings)', '(Merengón + Helado + 4 Toppings)'];
 let priceMerengones = ['6.500', '12.000', '16.000'];
 
 // BROWNIES
 // COSMICOS
 let nombreBrownies = ['Sencillo', 'Especial'];
-let imgBrownies = ['../assets/Brownies/brownie1.png', '../assets/Brownies/brownie2.png'];
+let imgBrownies = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Brownies/brownie2.png'];
 let desBrownies = ['(Brownie + Helado + 2 Toppings + Salsa)', '(Brownie + Helado + 3 Toppings + Salsas)'];
 let priceBrownies = ['8.500', '10.000'];
 
 // ENSALADA DE FRUTAS
 // COMETAS
 let nombreEnsalada = ['Especial', 'Super Especial'];
-let imgEnsalada = ['../assets/Ensalada/ensalada1.png', '../assets/Ensalada/ensalada2.png'];
+let imgEnsalada = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Ensalada/ensalada2.png'];
 let desEnsalada = ['', ''];
 let priceEnsalada = ['11.000', '14.000'];
 
 // POSTRE
 // POSTRE DE CUAJADA
 let nombrePostre = ['Cuajada con Dulce de Mora', 'Cuajada con Dulce de Fresa', 'Cuajada con Dulce de Arequipe', 'Mantecada con Helado'];
-let imgPostre = ['../assets/Postre/postre1.png', '../assets/Postre/postre2.png', '../assets/Postre/postre3.png', '../assets/Postre/postre4.png'];
+let imgPostre = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Postre/postre2.png', '../assets/Postre/postre3.png', '../assets/Postre/postre4.png'];
 let desPostre = ['Cuajada con dulce de mora', 'Cuajada con dulce de fresa', 'Cuajada con dulce de arequipe', 'Mantecada con helado'];
 let pricePostre = ['5.000', '5.000', '5.000', '6.500'];
 
@@ -189,4 +189,4 @@ function listaSelected(nombre, img, description, price, titulo, n) {
 
 
 
-listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Nebulosos', 0);
+listaSelected(nombreHelado, imgHelado, desHelado, priceHelado, 'Nebulosos', 0);
