@@ -75,7 +75,7 @@ function mostrarProducto(tipoProducto){
 
 //Aquí se proporcionara la descripcion de los helados de yogurt que se encuentran dentro de la heladeria y toda su informacion relevante
 let nombreHelado = ['Small', 'Medium', 'Big', 'Big Max'];
-let imgHelado = ['../assets/Waffles/waffle1.png', '../assets/Waffles/waffle2.png'];
+let imgHelado = ['../assets/Helado/waffle1.png', '../assets/Helado/waffle2.png'];
 let desHelado = ['(Helado + 1 Topping + Salsa', 'Helado + 2 Toppings + Salsa', 'Helado + 3 Toppings + Salsa', 'Helado + 4 Toppings + Salsa'];
 let priceHelado = ['5.000', '6.500', '8.000', '10.000']
 

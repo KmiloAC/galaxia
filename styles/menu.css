@@ -1,18 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+.item-selector{
+  border: 0.2px dashed;
+  border-left: none;
+}
+
+.section-selector{
+  position: absolute;
+  bottom: 8.5vh;
+  height: 8.5vh;
+  width: 100%;
+  background-color: rgb(255 187 187);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  position: fixed;
+}
+
+.food-item:nth-last-of-type(2), .food-item:nth-last-of-type(3), .food-item:nth-last-of-type(4), .food-item:nth-last-of-type(5), .food-item:last-of-type{
+  background: rgb(247 230 255);
+  border: 1px dashed;
+  border-right: none;
+}
+
 .logo-inicio{
-  background: url(../assets/comidas.png);
+  background: url(../assets/comidas.png) no-repeat;
   background-size: contain;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
+  background-position: center;
 }
 
 .main-title{
   font-family: 'Lobster', cursive;
   margin-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-top: 5px;
   border-bottom: 2px solid black;
+  margin-bottom: 0;
 }
 
 .backmenu{
@@ -31,7 +57,7 @@
   align-content: center;
   width: 100%;
   border-top: 1px dashed #5b5b5b;
-  height: 10vh;
+  height: 8.5vh;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
   color: rgb(51, 51, 51);
   text-decoration: none;
@@ -43,6 +69,7 @@
   margin-top: 10px;
   margin-left: 10px;
   height: 5.5rem;
+  margin-top: 5px1;
 }
 
 #main{
@@ -128,7 +155,8 @@
 #title{
   font-family: 'Lobster', cursive;
   margin-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  color: rgb(191, 0, 216);
   border-bottom: 2px solid black;
 }
 
