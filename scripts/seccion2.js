@@ -2,7 +2,7 @@
 
 list = document.getElementById('list-eatings');
 nombreComida = ['Bubblea Tea','Frappes','Limonadas','Raspados','Malteadas','Salpicon','Jugos Naturales', 'Otras bebidas', 'Antojitos Galacticos', 'Bebidas Calientes', 'Cocteleria'/*, 'Desayunos'*/, 'Snacks'];
-imagenes = ['../assets/lista-de-comida/image1.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/lista-de-comida/image3.png', '../assets/lista-de-comida/image4.png', '../assets/lista-de-comida/image5.png','../assets/lista-de-comida/image6.png','../assets/lista-de-comida/image7.png']
+imagenes = ['../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/lista-de-comida/image3.png', '../assets/lista-de-comida/image4.png', '../assets/lista-de-comida/image5.png','../assets/lista-de-comida/image6.png','../assets/lista-de-comida/image7.png']
 
 for(let i=0; i<nombreComida.length; i++){
     const item = document.createElement('div');

@@ -2,7 +2,7 @@
 
 list = document.getElementById('list-eatings');
 nombreComida = ['Helado de Yogurt','Parfaits','Sundae','Obleas','Waffles','Merengones','Brownies', 'Ensaladas de frutas', 'Postres', 'Bebidas Frias', 'Bebidas Calientes', 'Cocteleria'/*, 'Desayunos'*/, 'Snacks'];
-imagenes = ['../assets/lista-de-comida/image1.png', '../assets/seccion1/02parfaits/small.png', '../assets/seccion1/03sundae/sencillo.png', '../assets/seccion1/04obleas/big.png', '../assets/seccion1/05waffles/big.png','../assets/seccion1/06merengones/big.png','../assets/seccion1/07brownies/sencillo.png', '../assets/seccion1/08ensaladas/super-especial.png', '../assets/seccion1/09postres/cuajada.png', '', '', '', '', '']
+imagenes = ['../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion1/02parfaits/small.png', '../assets/seccion1/03sundae/sencillo.png', '../assets/seccion1/04obleas/big.png', '../assets/seccion1/05waffles/big.png','../assets/seccion1/06merengones/big.png','../assets/seccion1/07brownies/sencillo.png', '../assets/seccion1/08ensaladas/super-especial.png', '../assets/seccion1/09postres/cuajada.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png']
 
 for(let i=0; i<nombreComida.length; i++){
     const item = document.createElement('div');
@@ -75,7 +75,7 @@ function mostrarProducto(tipoProducto){
 
 //Aquí se proporcionara la descripcion de los helados de yogurt que se encuentran dentro de la heladeria y toda su informacion relevante
 let nombreHelado = ['Small', 'Medium', 'Big', 'Big Max'];
-let imgHelado = ['../assets/seccion1/01helado/waffle2.png', '../assets/seccion1/01helado/waffle2.png', '../assets/seccion1/01helado/waffle2.png', '../assets/seccion1/01helado/waffle2.png'];
+let imgHelado = ['../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/seccion2/02frappes/frapuccinos.png'];
 let desHelado = ['(Helado + 1 Topping + Salsa', 'Helado + 2 Toppings + Salsa', 'Helado + 3 Toppings + Salsa', 'Helado + 4 Toppings + Salsa'];
 let priceHelado = ['5.000', '6.500', '8.000', '10.000']
 
@@ -83,14 +83,14 @@ let priceHelado = ['5.000', '6.500', '8.000', '10.000']
 // PARFAITS
 // MARTE
 let nombreParfaits = ['Small', 'Big'];
-let imgParfaits = ['../assets/seccion1/02parfaits/small.png', '../assets/seccion1/02parfaits/waffle2.png'];
+let imgParfaits = ['../assets/seccion1/02parfaits/small.png', '../assets/seccion1/02parfaits/small.png'];
 let desParfaits = ['(2 frutas + Granola + Helado)', '(4 frutas + Granola + Helado)'];
 let priceParfaits = ['8.000', '11.000'];
 
 // SUNDAE
 // LUNA
 let nombreSundae = ['Sencillo', 'Especial'];
-let imgSundae = ['../assets/seccion1/03sundae/sencillo.png', '../assets/seccion1/03sundae/waffle2.png'];
+let imgSundae = ['../assets/seccion1/03sundae/sencillo.png', '../assets/seccion1/03sundae/sencillo.png'];
 let desSundae = ['(Con Salsas)', '(Con Frutas)'];
 let priceSundae = ['7.000', '9.000'];
 
@@ -98,21 +98,21 @@ let priceSundae = ['7.000', '9.000'];
 // OBLEAS
 // SOLARES
 let nombreObleas = ['Sencilla', 'Small con Helado', 'Big con Helado'];
-let imgObleas = ['../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/big.png'];
+let imgObleas = ['../assets/seccion1/04obleas/big.png', '../assets/seccion1/04obleas/big.png', '../assets/seccion1/04obleas/big.png'];
 let desObleas = ['(Arequipe + Queso + Salsas)', '(Arequipe + Queso + 2 Toppings + Helado + Salsas)', '(Arequipe + Queso + 2 Toppings + Helado + Salsas)'];
 let priceObleas = ['4.000', '10.000', '12.000'];
 
 // WAFFLES
 // ESTRELAS
 let nombreWaffles = ['Small', 'Big'];
-let imgWaffles = ['../assets/seccion1/05waffles/small.png', '../assets/seccion1/05waffles/big.png'];
+let imgWaffles = ['../assets/seccion1/05waffles/big.png', '../assets/seccion1/05waffles/big.png'];
 let desWaffles = ['(Waffle + Helado + 3 Toppings + Salsas)', '(Waffle + Helado + 5 Toppings + Salsas)'];
 let priceWaffles = ['14.000', '16.500'];
 
 // MERENGONES
 // UNIVERSOS
 let nombreMerengones = ['Small', 'Medium', 'Big'];
-let imgMerengones = ['../assets/seccion1/06merengones/waffle2.png', '../assets/seccion1/06merengones/waffle2.png', '../assets/seccion1/06merengones/big.png'];
+let imgMerengones = ['../assets/seccion1/06merengones/big.png', '../assets/seccion1/06merengones/big.png', '../assets/seccion1/06merengones/big.png'];
 let desMerengones = ['(Merengón + Helado + 1 Topping)', '(Merengón + Helado + 2 Toppings)', '(Merengón + Helado + 4 Toppings)'];
 let priceMerengones = ['6.500', '12.000', '16.000'];
 
