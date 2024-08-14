@@ -1,7 +1,7 @@
 // Creacion de la lista de comidas
 
 list = document.getElementById('list-eatings');
-nombreComida = ['Arepas Rellenas', 'Sandwich', 'Waffles de sal', 'Antojitos Galacticos', 'Bebidas Frias', 'Bebidas Calientes', 'Desayunos', 'Cocteleria'];
+nombreComida = ['Arepas Rellenas', 'Sandwich', 'Waffles de sal', 'Antojitos Galacticos', 'Bebidas Frias', 'Bebidas Calientes'/*, 'Desayunos'*/, 'Cocteleria'];
 imagenes = ['../assets/lista-de-comida/image1.png', '../assets/lista-de-comida/image2.png', '../assets/lista-de-comida/image3.png', '../assets/lista-de-comida/image4.png', '../assets/lista-de-comida/image5.png','../assets/lista-de-comida/image6.png','../assets/lista-de-comida/image7.png']
 
 for(let i=0; i<nombreComida.length; i++){
@@ -46,7 +46,7 @@ function mostrarProducto(tipoProducto){
             window.location.href = 'seccion4.html';
             break;  
         case 6:
-            window.location.href = 'seccion5.html';
+            window.location.href = 'seccion6.html';
             break;    
         case 7:
             window.location.href = 'seccion6.html';

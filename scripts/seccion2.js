@@ -1,7 +1,7 @@
 // Creacion de la lista de comidas
 
 list = document.getElementById('list-eatings');
-nombreComida = ['Bubblea Tea','Frappes','Limonadas','Raspados','Malteadas','Salpicon','Jugos Naturales', 'Otras bebidas', 'Antojitos Galacticos', 'Bebidas Calientes', 'Cocteleria', 'Desayunos', 'Snacks'];
+nombreComida = ['Bubblea Tea','Frappes','Limonadas','Raspados','Malteadas','Salpicon','Jugos Naturales', 'Otras bebidas', 'Antojitos Galacticos', 'Bebidas Calientes', 'Cocteleria'/*, 'Desayunos'*/, 'Snacks'];
 imagenes = ['../assets/lista-de-comida/image1.png', '../assets/seccion2/02frappes/frapuccinos.png', '../assets/lista-de-comida/image3.png', '../assets/lista-de-comida/image4.png', '../assets/lista-de-comida/image5.png','../assets/lista-de-comida/image6.png','../assets/lista-de-comida/image7.png']
 
 for(let i=0; i<nombreComida.length; i++){
@@ -59,7 +59,7 @@ function mostrarProducto(tipoProducto){
             window.location.href = 'seccion4.html';
             break;  
         case 11:
-            window.location.href = 'seccion5.html';
+            window.location.href = 'seccion6.html';
             break;    
         case 12:
             window.location.href = 'seccion6.html';

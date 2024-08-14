@@ -38,7 +38,7 @@ function mostrarProducto(tipoProducto){
             window.location.href = 'seccion4.html';
             break;  
         case 4:
-            window.location.href = 'seccion5.html';
+            window.location.href = 'seccion6.html';
             break;    
         case 5:
             window.location.href = 'seccion6.html';

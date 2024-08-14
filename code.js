@@ -7,7 +7,7 @@ const buttonData = [
     { text: 'Bebidas Frias', href: 'pages/seccion2.html' },
     { text: 'Bebidas Calientes', href: 'pages/seccion3.html' },
     { text: 'Cocteleria', href: 'pages/seccion4.html' },
-    { text: 'Desayunos', href: 'pages/seccion5.html' },
+    //{ text: 'Desayunos', href: 'pages/seccion5.html' },
     { text: 'Snacks', href: 'pages/seccion6.html' }
 ];
 

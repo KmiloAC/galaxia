@@ -1,8 +1,8 @@
 // Creacion de la lista de comidas
 
 list = document.getElementById('list-eatings');
-nombreComida = ['Helado de Yogurt','Parfaits','Sundae','Obleas','Waffles','Merengones','Brownies', 'Ensaladas de frutas', 'Postres', 'Bebidas Frias', 'Bebidas Calientes', 'Cocteleria', 'Desayunos', 'Snacks'];
-imagenes = ['../assets/lista-de-comida/image1.png', '../assets/lista-de-comida/image2.png', '../assets/lista-de-comida/image3.png', '../assets/lista-de-comida/image4.png', '../assets/lista-de-comida/image5.png','../assets/lista-de-comida/image6.png','../assets/lista-de-comida/image7.png', '', '']
+nombreComida = ['Helado de Yogurt','Parfaits','Sundae','Obleas','Waffles','Merengones','Brownies', 'Ensaladas de frutas', 'Postres', 'Bebidas Frias', 'Bebidas Calientes', 'Cocteleria'/*, 'Desayunos'*/, 'Snacks'];
+imagenes = ['../assets/lista-de-comida/image1.png', '../assets/seccion1/02parfaits/small.png', '../assets/seccion1/03sundae/sencillo.png', '../assets/seccion1/04obleas/big.png', '../assets/seccion1/05waffles/big.png','../assets/seccion1/06merengones/big.png','../assets/seccion1/07brownies/sencillo.png', '../assets/seccion1/08ensaladas/super-especial.png', '../assets/seccion1/09postres/cuajada.png', '', '', '', '', '']
 
 for(let i=0; i<nombreComida.length; i++){
     const item = document.createElement('div');
@@ -61,7 +61,7 @@ function mostrarProducto(tipoProducto){
             window.location.href = 'seccion4.html';
             break;  
         case 12:
-            window.location.href = 'seccion5.html';
+            window.location.href = 'seccion6.html';
             break;    
         case 13:
             window.location.href = 'seccion6.html';
@@ -83,14 +83,14 @@ let priceHelado = ['5.000', '6.500', '8.000', '10.000']
 // PARFAITS
 // MARTE
 let nombreParfaits = ['Small', 'Big'];
-let imgParfaits = ['../assets/seccion1/02parfaits/waffle2.png', '../assets/seccion1/02parfaits/waffle2.png'];
+let imgParfaits = ['../assets/seccion1/02parfaits/small.png', '../assets/seccion1/02parfaits/waffle2.png'];
 let desParfaits = ['(2 frutas + Granola + Helado)', '(4 frutas + Granola + Helado)'];
 let priceParfaits = ['8.000', '11.000'];
 
 // SUNDAE
 // LUNA
 let nombreSundae = ['Sencillo', 'Especial'];
-let imgSundae = ['../assets/seccion1/03sundae/waffle2.png', '../assets/seccion1/03sundae/waffle2.png'];
+let imgSundae = ['../assets/seccion1/03sundae/sencillo.png', '../assets/seccion1/03sundae/waffle2.png'];
 let desSundae = ['(Con Salsas)', '(Con Frutas)'];
 let priceSundae = ['7.000', '9.000'];
 
@@ -98,7 +98,7 @@ let priceSundae = ['7.000', '9.000'];
 // OBLEAS
 // SOLARES
 let nombreObleas = ['Sencilla', 'Small con Helado', 'Big con Helado'];
-let imgObleas = ['../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/waffle2.png'];
+let imgObleas = ['../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/waffle2.png', '../assets/seccion1/04obleas/big.png'];
 let desObleas = ['(Arequipe + Queso + Salsas)', '(Arequipe + Queso + 2 Toppings + Helado + Salsas)', '(Arequipe + Queso + 2 Toppings + Helado + Salsas)'];
 let priceObleas = ['4.000', '10.000', '12.000'];
 
@@ -112,29 +112,29 @@ let priceWaffles = ['14.000', '16.500'];
 // MERENGONES
 // UNIVERSOS
 let nombreMerengones = ['Small', 'Medium', 'Big'];
-let imgMerengones = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Merengones/merengon2.png', '../assets/Merengones/merengon3.png'];
+let imgMerengones = ['../assets/seccion1/06merengones/waffle2.png', '../assets/seccion1/06merengones/waffle2.png', '../assets/seccion1/06merengones/big.png'];
 let desMerengones = ['(Merengón + Helado + 1 Topping)', '(Merengón + Helado + 2 Toppings)', '(Merengón + Helado + 4 Toppings)'];
 let priceMerengones = ['6.500', '12.000', '16.000'];
 
 // BROWNIES
 // COSMICOS
 let nombreBrownies = ['Sencillo', 'Especial'];
-let imgBrownies = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Brownies/brownie2.png'];
+let imgBrownies = ['../assets/seccion1/07brownies/sencillo.png', '../assets/seccion1/07brownies/sencillo.png'];
 let desBrownies = ['(Brownie + Helado + 2 Toppings + Salsa)', '(Brownie + Helado + 3 Toppings + Salsas)'];
-let priceBrownies = ['8.500', '10.000'];
+let priceBrownies = ['8.500', '11.000'];
 
 // ENSALADA DE FRUTAS
 // COMETAS
 let nombreEnsalada = ['Especial', 'Super Especial'];
-let imgEnsalada = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Ensalada/ensalada2.png'];
+let imgEnsalada = ['../assets/seccion1/08ensaladas/especial.png', '../assets/seccion1/08ensaladas/super-especial.png'];
 let desEnsalada = ['', ''];
 let priceEnsalada = ['11.000', '14.000'];
 
 // POSTRE
 // POSTRE DE CUAJADA
-let nombrePostre = ['Cuajada con Dulce de Mora', 'Cuajada con Dulce de Fresa', 'Cuajada con Dulce de Arequipe', 'Mantecada con Helado'];
-let imgPostre = ['../assets/seccion1/03sundae/waffle2.png', '../assets/Postre/postre2.png', '../assets/Postre/postre3.png', '../assets/Postre/postre4.png'];
-let desPostre = ['Cuajada con dulce de mora', 'Cuajada con dulce de fresa', 'Cuajada con dulce de arequipe', 'Mantecada con helado'];
+let nombrePostre = ['Cuajada con Dulce de Mora', 'Mantecada con Helado'];
+let imgPostre = ['../assets/seccion1/09postres/cuajada.png', '../assets/seccion1/07brownies/sencillo.png'];
+let desPostre = ['Cuajada con dulce', 'Mantecada con helado'];
 let pricePostre = ['5.000', '5.000', '5.000', '6.500'];
 
 
@@ -154,14 +154,15 @@ function listaSelected(nombre, img, description, price, titulo, n) {
         item.classList.add('item');
         contBox.appendChild(item);
         
+        const text = document.createElement('div');
+        text.textContent = nombre[i];
+        text.classList.add('item-text');
+        item.appendChild(text);
+
         const imagen = document.createElement('img');
         imagen.src = img[i];
         imagen.classList.add('item-img');
         item.appendChild(imagen);
-        
-        const text = document.createElement('div');
-        text.textContent = nombre[i];
-        item.appendChild(text);
         
         const desc = document.createElement('div');
         desc.classList.add('item-description');
