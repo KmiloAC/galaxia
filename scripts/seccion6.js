@@ -141,18 +141,36 @@ function listaSelected(nombre, img, description, price, titulo, n) {
 listaSelected(nombreArepas, imgArepas, desArepas, priceArepas, 'Arepas Rellenas', 0);
 
 function ajustarTamanoContenedores() {
+    // Obtener todos los elementos .item
     const items = document.querySelectorAll('.item');
-    let maxHeight = 0;
+    let maxHeightItem = 0;
   
+    // Encuentra el alto máximo entre .item
     items.forEach(item => {
       const rect = item.getBoundingClientRect();
-      if (rect.height > maxHeight) maxHeight = rect.height;
+      if (rect.height > maxHeightItem) maxHeightItem = rect.height;
     });
   
+    // Ajusta el alto de todos los elementos .item
     items.forEach(item => {
-      item.style.height = `${maxHeight}px`;
+      item.style.height = `${maxHeightItem}px`;
     });
-  }
+  
+    // Obtener todos los elementos .item-description
+    const descriptions = document.querySelectorAll('.item-description');
+    let maxHeightDescription = 0;
+  
+    // Encuentra el alto máximo entre .item-description
+    descriptions.forEach(description => {
+      const rect = description.getBoundingClientRect();
+      if (rect.height > maxHeightDescription) maxHeightDescription = rect.height;
+    });
+  
+    // Ajusta el alto de todos los elementos .item-description
+    descriptions.forEach(description => {
+      description.style.height = `${maxHeightDescription}px`;
+    });
+}
   
   // Llama a esta función después de que los elementos se hayan agregado al DOM
   document.addEventListener('DOMContentLoaded', ajustarTamanoContenedores);
