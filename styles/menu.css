@@ -165,8 +165,8 @@
 #title{
   font-family: 'Lobster', cursive;
   margin-left: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid black;
+  padding-top: 10px;
+  border-top: 2px solid black;
 }
 
 .creator-data{
