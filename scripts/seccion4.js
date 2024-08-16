@@ -27,6 +27,7 @@ function mostrarProducto(tipoProducto){
         // Aquí se proporcionará la descripción de los waffles que se encuentran dentro de la heladería y toda su información relevante
         case 0:
             listaSelected(nombreCocteleria, imgCocteleria, desCocteleria, priceCocteleria, 'Eclipses', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 1:
             window.location.href = 'seccion1.html';
@@ -46,6 +47,7 @@ function mostrarProducto(tipoProducto){
         default:
             // Puedes agregar un mensaje de error o acción por defecto aquí si es necesario
             listaSelected(nombreCocteleria, imgCocteleria, desCocteleria, priceCocteleria, 'Eclipses', tipoProducto);
+            ajustarTamanoContenedores();
             break;
     }
 }
@@ -113,3 +115,21 @@ function listaSelected(nombre, img, description, price, titulo, n) {
 
 
 listaSelected(nombreCocteleria, imgCocteleria, desCocteleria, priceCocteleria, 'Eclipses', 0);
+
+function ajustarTamanoContenedores() {
+    const items = document.querySelectorAll('.item');
+    let maxHeight = 0;
+  
+    items.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      if (rect.height > maxHeight) maxHeight = rect.height;
+    });
+  
+    items.forEach(item => {
+      item.style.height = `${maxHeight}px`;
+    });
+  }
+  
+  // Llama a esta función después de que los elementos se hayan agregado al DOM
+  document.addEventListener('DOMContentLoaded', ajustarTamanoContenedores);
+   

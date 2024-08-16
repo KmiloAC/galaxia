@@ -26,30 +26,39 @@ function mostrarProducto(tipoProducto){
     switch (tipoProducto) {
         case 0:
             listaSelected(nombreHelado, imgHelado, desHelado, priceHelado, 'Nebulosos', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 1:
             listaSelected(nombreParfaits, imgParfaits, desParfaits, priceParfaits, 'Marte', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 2:
             listaSelected(nombreSundae, imgSundae, desSundae, priceSundae, 'Luna', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 3:
             listaSelected(nombreObleas, imgObleas, desObleas, priceObleas, 'Solares', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 4:
             listaSelected(nombreWaffles, imgWaffles, desWaffles, priceWaffles, 'Estrellas', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 5:
             listaSelected(nombreMerengones, imgMerengones, desMerengones, priceMerengones, 'Universos', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 6:
             listaSelected(nombreBrownies, imgBrownies, desBrownies, priceBrownies, 'Cósmicos', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 7:
             listaSelected(nombreEnsalada, imgEnsalada, desEnsalada, priceEnsalada, 'Cometas', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 8:
             listaSelected(nombrePostre, imgPostre, desPostre, pricePostre, 'Postres', tipoProducto);
+            ajustarTamanoContenedores();
             break;
         case 9:
             window.location.href = 'seccion2.html';
@@ -191,3 +200,42 @@ function listaSelected(nombre, img, description, price, titulo, n) {
 
 
 listaSelected(nombreHelado, imgHelado, desHelado, priceHelado, 'Nebulosos', 0);
+
+
+function ajustarTamanoContenedores() {
+    // Obtener todos los elementos .item
+    const items = document.querySelectorAll('.item');
+    let maxHeightItem = 0;
+  
+    // Encuentra el alto máximo entre .item
+    items.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      if (rect.height > maxHeightItem) maxHeightItem = rect.height;
+    });
+  
+    // Ajusta el alto de todos los elementos .item
+    items.forEach(item => {
+      item.style.height = `${maxHeightItem}px`;
+    });
+  
+    // Obtener todos los elementos .item-description
+    const descriptions = document.querySelectorAll('.item-description');
+    let maxHeightDescription = 0;
+  
+    // Encuentra el alto máximo entre .item-description
+    descriptions.forEach(description => {
+      const rect = description.getBoundingClientRect();
+      if (rect.height > maxHeightDescription) maxHeightDescription = rect.height;
+    });
+  
+    // Ajusta el alto de todos los elementos .item-description
+    descriptions.forEach(description => {
+      description.style.height = `${maxHeightDescription}px`;
+    });
+}
+
+
+  
+  // Llama a esta función después de que los elementos se hayan agregado al DOM
+  document.addEventListener('DOMContentLoaded', ajustarTamanoContenedores);
+   
